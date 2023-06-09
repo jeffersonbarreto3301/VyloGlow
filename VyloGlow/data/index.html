@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="images/Ergosign-Free-Environment-Bulb.ico" type="image/x-icon">
+    <title>VyloGlow</title>
+</head>
+<body>
+    <section class="container">
+        <div class="circle"></div>
+        <header>
+            <div class="header_logo">VyloGlow</div>
+            <div class="nav_links">
+                <ul>
+                    <a href="#"><li type="none">Home</li></a>
+                    <a href="#"><li type="none">Menu</li></a>
+                    <a href="#"><li type="none">What's New</li></a>
+                    <a href="#"><li type="none">Contact</li></a>
+                </ul>
+            </div> 
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Radiant Lumina</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quis ea voluptas rem aperiam rerum voluptate voluptates sit quo eveniet provident quibusdam est expedita officia, corporis, maiores cupiditate cumque aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="imgbox">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/lamp-1.png"></div>
+                    <div class="swiper-slide"><img src="images/lamp-2.png"></div>
+                    <div class="swiper-slide"><img src="images/lamp-3.png"></div>
+                    <div class="swiper-slide"><img src="images/lamp-4.png"></div>
+                    <div class="swiper-slide"><img src="images/lamp-5.png" width="1000" height="500"></div>
+                </div>
+        </div>
+           
+            <ul class="icons">
+                <li><a href="https://www.instagram.com/maycon__braga/" target="_blank"><img src="images/instagram.png" width="33px"
+                    height="33px"></a></li>
+                <li><a href="https://github.com/jeffersonbarreto3301" target="_blank"><img src="images/github.png" width="33px"
+                    height="33px"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" width="33px"
+                    height="33px"></a></li>
+            </ul>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 50,
+            depth: 1000,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        loop: true,
+        });
+    </script>
+</body>
+</html>
